@@ -1,69 +1,278 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Looly.github.io by looly</title>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Codester | Home</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="http://dzyngiri.com/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="http://dzyngiri.com/favicon.png" type="image/x-icon" />
+    <meta name="description" content="Codester is a free responsive Bootstrap template by Dzyngiri">
+    <meta name="keywords" content="free, template, bootstrap, responsive">
+    <meta name="author" content="Inbetwin Networks">  
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>    
+	<script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+	<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Looly.github.io</h1>
-        <p class="header"></p>
+	<script>		
+		 jQuery(window).load(function() {	
+		 $x = $(window).width();		
+	if($x > 1024)
+	{			
+	jQuery("#content .row").preloader();    }	
+		 
+     jQuery('.magnifier').touchTouch();			
+    jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});	
+  		  }); 
+				
+	</script>
 
+	<!--[if lt IE 8]>
+  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+ 	<![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+  <![endif]-->
+</head>
 
-
-        <ul>
-          <li><a class="buttons github" href="https://github.com/looly">GitHub Profile</a></li>
-        </ul>
-
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+	<body>
+    <div class="spinner"></div> 
+<!-- header start -->
+<header>
+      <div class="container clearfix">
+    <div class="row">
+          <div class="span12">
+        <div class="navbar navbar_">
+              <div class="container">
+            <h1 class="brand brand_"><a href="index.html"><img alt="" src="img/logo.png"> </a></h1>
+            <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
+            <div class="nav-collapse nav-collapse_  collapse">
+                  <ul class="nav sf-menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="sub-menu"><a href="process.html">Process</a>
+                      <ul>
+                    <li><a href="#">Process 01</a></li>
+                    <li><a href="#">Process 02</a></li>
+                    <li><a href="#">Process 03</a></li>
+                  </ul>
+                    </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+                </div>
+          </div>
+            </div>
+      </div>
+        </div>
+  </div>
+    </header>
+<div class="bg-content">
+      <div class="container">
+    <div class="row">
+          <div class="span12"> 
+        <!-- slider -->
+        <div class="flexslider">
+              <ul class="slides">
+            <li> <img src="img/slide-1.jpg" alt="" > </li>
+            <li> <img src="img/slide-2.jpg" alt="" > </li>
+            <li> <img src="img/slide-3.jpg" alt="" > </li>
+            <li> <img src="img/slide-4.jpg" alt="" > </li>
+            <li> <img src="img/slide-5.jpg" alt="" > </li>
+          </ul>
+            </div>
+        <span id="responsiveFlag"></span>
+        <div class="block-slogan">
+              <h2>Namaskar!</h2>
+              <div>
+            <p>This template is designed and developed over the Bootstrap frontend framework. Which is a free front-end framework for designers. Template is fully <i>responsive</i> and <i>compatible</i> with all the major browsers.</p>
+            <p style="text-align:center; padding-top:20px;"><a href="#" class="btn btn-1">Download Bootstrap</a></p>
+          </div>
+            </div>
+      </div>
+        </div>
+  </div>
+      
+      <!-- content -->
+      
+      <div id="content" class="content-extra"><div class="ic"></div>
+    <div class="row-1">
+        <div class="container">
+    		<div class="row">
+        <article class="span12">
+        <h4>Our Work</h4>
+         </article>
+        <div class="clear"></div>
+         <ul class="portfolio clearfix">           
+           <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/1.jpg"></a></li> 
+           <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/2.jpg"></a></li> 
+           <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/3.jpg"></a></li> 
+           <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/4.jpg"></a></li> 
+           <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/5.jpg"></a></li> 
+           <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/6.jpg"></a></li> 
+           <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/7.jpg"></a></li> 
+           <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/8.jpg"></a></li>                       
+         </ul> 
+      </div>
+     	</div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
-  </body>
+    <div class="row-2">
+        <div class="container">
+        	<h3>Completly Customizable and Responsive</h3>
+            <h3>Easy to Use. Totally Free to Download. Made with love!</h3>
+            <p>The complete template is created using the Bootstrap framework, which is highly customizable with lots of options.</p>
+            <a href="#" class="btn btn-1">Download</a>
+      </div>
+        </div>
+    <div class="row-1">
+        <div class="container">
+        <div class="row">
+        <article class="span12">
+        <h4>From blog</h4>
+         </article>
+              <ul class="thumbnails thumbnails-1">
+            <li class="span3">
+                  <div class="thumbnail thumbnail-1">
+                <h3>Web Design</h3>
+                <img  src="img/blog-featured-01.jpg" alt="">
+                <section> 
+                		<a href="#"><h3>At vero eos et accusamus et iusto </h3></a>
+                	    <div class="meta">
+                            <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
+                            <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
+                            <a href="#" class="comments"><i class="icon-comment"></i> 7 comments</a>
+                        </div> 
+                        <div class="clear"></div>
+                      <p>Vivamus sollicitudin libero auctor arcu pulvinar commodo.</p>
+                      <a href="#" class="btn btn-1">Read More</a> </section>
+              </div>
+                </li>
+            <li class="span3">
+                  <div class="thumbnail thumbnail-1">
+                <h3>Graphics</h3>
+                <img  src="img/blog-featured-02.jpg" alt="">
+                <section> 
+                	  <a href="#"><h3>Deleniti atque corrupti quos</h3></a>
+                        <div class="meta">
+                            <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
+                            <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
+                            <a href="#" class="comments"><i class="icon-comment"></i> 4 comments</a>
+                        </div>
+                        <div class="clear"></div>            
+                      <p>Vestibulum volutpat urna sed sapien vehicula varius.</p>
+                      <a href="#" class="btn btn-1">Read More</a> </section>
+              </div>
+                </li>
+            <li class="span3">
+                  <div class="thumbnail thumbnail-1">
+                <h3>Social Media</h3>
+                <img  src="img/blog-featured-03.jpg" alt="">
+                <section>
+                	  <a href="#"><h3>Similique sunt in culpa qui officia</h3></a>
+                        <div class="meta">
+                            <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
+                            <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
+                            <a href="#" class="comments"><i class="icon-comment"></i> 9 comments</a>
+                        </div>
+                        <div class="clear"></div>   
+                      <p>Pellentesque mi justo, laoreet non bibendum non, auctor imperdiet eros.</p>
+                      <a href="#" class="btn btn-1">Read More</a> </section>
+              </div>
+                </li>
+            <li class="span3">
+                  <div class="thumbnail thumbnail-1">
+                <h3 class="title-1 extra">Photography</h3>
+                <img  src="img/blog-featured-04.jpg" alt="">
+                <section> <a href="#"><h3>Similique sunt in culpa qui officia</h3></a>
+                		<div class="meta">
+                            <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
+                            <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
+                            <a href="#" class="comments"><i class="icon-comment"></i> 1 comment</a>
+                        </div> 
+                        <div class="clear"></div>   
+                      <p>Vestibulum volutpat urna sed sapien vehicula varius.</p>
+                      <a href="#" class="btn btn-1">Read More</a> </section>
+              </div>
+                </li>
+          </ul>
+            </div>
+      </div>
+        </div>
+    
+    <div class="container">
+          <div class="row">
+        <article class="span6">
+              <h3>Shortly about us</h3>
+              <div class="wrapper">
+            <figure class="img-indent"><img src="img/15.jpg " alt="" /></figure>
+            <div class="inner-1 overflow extra">
+                  <div class="txt-1">Mauris scelerisque odio quis leo viverra ac porttitor sem blandit. Sed tincidunt mattis varius. Nunc sodales ipsum nisl, eget lacinia nibh.</div>
+                  Cras lacus tortor, tempus vitae porta nec, hendrerit id dolor. Nam volutpat gravida porta. Suspendisse turpis nibh, volutpat. 
+                </div>
+          </div>
+            </article>
+        <article class="span6">
+              <h3>Some quick links</h3>
+                <div class="wrapper">
+                    <ul class="list list-pad">
+                          <li><a href="#">Campaigns</a></li>
+                          <li><a href="#">Portraits</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Fine Art</a></li>
+                        </ul>
+                    <ul class="list list-pad">
+                          <li><a href="#">Campaigns</a></li>
+                          <li><a href="#">Portraits</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Fine Art</a></li>
+                        </ul>
+                    <ul class="list list-pad">
+                          <li><a href="#">Campaigns</a></li>
+                          <li><a href="#">Portraits</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Fine Art</a></li>
+                        </ul>
+                    <ul class="list">
+                          <li><a href="#">Advertising</a></li>
+                          <li><a href="#">Lifestyle</a></li>
+                          <li><a href="#">Love story</a></li>
+                          <li><a href="#">Landscapes</a></li>
+                    </ul>
+                </div>
+            </article>
+      </div>
+        </div>
+  </div>
+    </div>
+
+<!-- footer -->
+<footer>
+      <div class="container clearfix">
+    <ul class="list-social pull-right">
+          <li><a class="icon-1" href="#"></a></li>
+          <li><a class="icon-2" href="#"></a></li>
+          <li><a class="icon-3" href="#"></a></li>
+          <li><a class="icon-4" href="#"></a></li>
+        </ul>
+    <div class="privacy pull-left">&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
+  </div>
+    </footer>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
 </html>
