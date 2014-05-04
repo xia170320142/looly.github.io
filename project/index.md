@@ -4,7 +4,7 @@ layout: home
 
 <div class="index-content project">
     <div class="section">
-        {% include artical-cate.html %}
+        {% include artical-cate-project.html %}
 
         <ul class="artical-list">
         {% for post in site.categories.project %}

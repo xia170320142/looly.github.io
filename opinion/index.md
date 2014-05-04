@@ -4,7 +4,7 @@ layout: home
 
 <div class="index-content opinion">
     <div class="section">
-        {% include artical-cate.html %}
+        {% include artical-cate-opinion.html %}
 
         <ul class="artical-list">
         {% for post in site.categories.opinion %}
