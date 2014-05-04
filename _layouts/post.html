@@ -43,8 +43,24 @@ layout: default
                 })()
                 </script>
             </div>
-            <a href="#" class="comment" onclick="return false;">点击查看评论</a>
-            <div id="disqus_thread"></div>
+            
+            <!--搜狐畅言-->
+            <div id="SOHUCS"></div>
+            <script>
+              (function(){
+                var appid = 'cyr9ESTUX',
+                conf = 'prod_bc0ac5fa34748484ef7fc4c4620700e4';
+                var doc = document,
+                s = doc.createElement('script'),
+                h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+                s.type = 'text/javascript';
+                s.charset = 'utf-8';
+                s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+                h.insertBefore(s,h.firstChild);
+                window.SCS_NO_IFRAME = true;
+              })()
+            </script>
+
         </div>
     </div>
 
