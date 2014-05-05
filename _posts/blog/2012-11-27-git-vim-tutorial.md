@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [转]Git时代的VIM不完全使用教程
+title: Git时代的VIM不完全使用教程
 description: 在Git流行的时代，VIM的生态环境也有了长足的进步，令人感动。
 category: blog
 ---
