@@ -1,3 +1,10 @@
+---
+layout:      post
+title:       Markdown语法总结
+category:    blog
+description: Markdown语法简明对照表，利于快速查找，当字典用吧
+---
+
 # Markdown语法总结
 -----------------------
 # 标题1
