@@ -69,9 +69,9 @@ I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 #### 代码
 `<blink>`
 #### 代码块
-``` Python
-print 'Hello World!'
-```
+    ``` Python
+    print 'Hello World!'
+    ```
 #### 代码块2
     print 'Hello World!'
 
