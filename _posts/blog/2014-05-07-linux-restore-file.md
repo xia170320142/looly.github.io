@@ -28,8 +28,6 @@ Linux下执行 rm 并不会真正删除，而是将inode节点中的扇区删除
     /dev/sda1                 495844    64150      406094  14% /boot
     
 #### 运行恢复
-默认恢复到当前目录下的RECOVERED_FILES目录中去
-
 1. 恢复单个文件
         extundelete /dev/sdb1 --restore-file hosts
 2. 恢复一个目录
