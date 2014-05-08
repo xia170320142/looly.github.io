@@ -36,7 +36,7 @@ description: 这篇博客主要是我平时使用到的一些命令，在此做�
 
 #### 根据IP反查DNS
     host IP     #Linux
-    nsloopup IP #Windows
+    nslookup IP #Windows
 
 #### tar打包、解包    
     tar zcvf XXX.tar.gz 文件或目录            #打包
