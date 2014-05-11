@@ -8,7 +8,7 @@ description: 在抓取网站的页面的时候最烦人的一件事情之一就�
 在抓取网站的页面的时候最烦人的一件事情之一就是识别原站点的编码，通常来说只有GBK（GB2312）和UTF8两种，不过依旧需要读取大量Http头信息来识别，有些网站则由于历史原因两种编码同时存在，导致抓取中的一些问题。于是苦苦寻找，终于找到神器[juniversalchardet](https://code.google.com/p/juniversalchardet/)。
 
 #### 首先引包
-```Xml
+```Java
 <!-- Mozilla的编码识别包 -->
 <dependency>
     <groupId>com.googlecode.juniversalchardet</groupId>
