@@ -90,6 +90,7 @@ $(document).ready(function(){
 
         function genIndex(){
             var tmpl = genTmpl();
+            alert(tmpl)
             var indexCon = '<div id="menuIndex" class="sidenav"></div>';
 
             $('#content').append(indexCon);
