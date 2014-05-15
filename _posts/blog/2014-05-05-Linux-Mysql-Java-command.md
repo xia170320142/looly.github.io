@@ -33,6 +33,7 @@ description: 这篇博客主要是我平时使用到的一些命令，在此做�
     ssh-keygen -t rsa                                          #生成公钥
     scp ~/.ssh/id_rsa.pub 192.168.1.1:~/.ssh/authorized_keys   #加入公钥信任
     ssh-copy-id -i ~/.ssh/id_rsa.pub  192.168.1.1              #加入公钥信任
+此处需要注意，当前用户目录和.ssh目录权限必须是700，authorized_keys权限必须是600（644貌似也可以）
 
 #### 根据IP反查DNS
     host IP     #Linux
