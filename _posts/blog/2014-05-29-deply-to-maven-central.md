@@ -22,13 +22,13 @@ description: 前几天参考@黄勇 大神的博客http://my.oschina.net/huangyo
 ---------------------------------------------------------------------------------------------
 
 ## 1. 注册帐户
-注册地址是 https://issues.sonatype.org/secure/Signup!default.jspa
+注册地址是 [https://issues.sonatype.org/secure/Signup!default.jspa](https://issues.sonatype.org/secure/Signup!default.jspa)
 ![sonatype注册页面][4]
 
 字段我就不细说了，一看就懂，不过Email非常重要，之后和工作人员的交流全靠这个邮件了。
 
 ## 2. 创建一个 Issue
-地址是 https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134
+地址是 [https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134](https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134)
 ![创建Issue][5]
 
 这里需要特别说明的是Group Id，如果你是托管在Github或者Git@OSC 可以使用com.github.XXX或者net.oschina.XXX，我之前注册了个自己的域名com.xiaoleilu，所以在此填写这个group，剩下的可以依照实际情况填写，例如托管的地址等等。
@@ -45,7 +45,7 @@ description: 前几天参考@黄勇 大神的博客http://my.oschina.net/huangyo
 1. 安装
 我使用apt-cyg安装的，具体不介绍了，如果不会就参考[Windows下安装Cygwin及包管理器apt-cyg](http://my.oschina.net/looly/blog/214857)，然后运行
     
-        apt-cyg install apt-cyg install gnupg
+        apt-cyg install gnupg
 
 如果你是Linux，也可以用包管理工具安装`gnupg`这个包。
 
