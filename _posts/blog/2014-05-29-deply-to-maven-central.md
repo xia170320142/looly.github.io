@@ -81,7 +81,7 @@ description: 前几天参考@黄勇 大神的博客http://my.oschina.net/huangyo
 
 我开始的时候修改权限失败了，原因是这个目录的组是`None`，所以执行
 
-    hown loolly:Users .gnupg
+    chown loolly:Users .gnupg
 
 给定了一个组名，这样chmod命令就可以正常执行了。
 
