@@ -71,7 +71,9 @@ layout: default
         <div id="qrcodeCanvas"></div>
         <script>
             $('#qrcodeCanvas').qrcode({
-                text: '"' + window.location.href + '"'
+                text: window.location.href,
+                width: 256,
+                height: 256
             });
         </script>
     </div>
