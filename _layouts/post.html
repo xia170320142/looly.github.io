@@ -64,8 +64,16 @@ layout: default
         </div>
     </div>
 
+    <script type="text/javascript" src="/js/jquery.qrcode.js"></script>
+    <script type="text/javascript" src="/js/qrcode.js"></script>
     <div class="sidenav">
         <iframe width="100%" height="75" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=75&fansRow=2&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=1821029715&verifier=31c6f06c&dpc=1"></iframe>
+        <div id="qrcodeCanvas"></div>
+        <script>
+            $('#qrcodeCanvas').qrcode({
+                text: '"' + window.location.href + '"'
+            });
+        </script>
     </div>
 
     <div class="sidenav">
