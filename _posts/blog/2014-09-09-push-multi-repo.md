@@ -5,10 +5,10 @@ category:    blog
 description: 我的Hutool项目现在在Github和Git@OSC上都有，每次都是开两个项目，手动同步文件，然后分别提交。后来发现可以一个项目同时提交到多个远程库，还真是方便。
 ---
 
-#需求
+# 需求
 我的Hutool项目现在在Github和Git@OSC上都有，每次都是开两个项目，手动同步文件，然后分别提交。非常不方便。
 
-#建立多个远程仓库
+# 建立多个远程仓库
 以我的Hutool项目为例，在Github的地址是`git@github.com:looly/hutool.git`，在Git@OSC的地址是`git@git.oschina.net:loolly/hutool.git`。
 按照原先的思路，我们在建立远程库的时候都是运行
     
