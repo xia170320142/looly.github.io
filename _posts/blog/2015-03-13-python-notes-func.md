@@ -112,7 +112,7 @@ name: Jack age: 24 other: {'city': 'Beijing', 'job': 'Engineer'}
 ### map(func, list)
 map()函数接收两个参数，一个是函数，一个是序列，map将传入的函数依次作用到序列的每个元素，并把结果作为新的list返回。
 
-```
+```python
 >>> def f(x):
 ...     return x * x
 ...
@@ -191,7 +191,8 @@ def lazy_sum(*args):
 注：每次调用`lazy_sum()`都会返回一个新的函数，即使传入相同的参数。
 
 ### 闭包
-```
+
+```python
 def count():
     fs = []
     for i in range(1, 4):
@@ -334,7 +335,7 @@ max2 = functools.partial(max, 10)
 ```python
 max2(5, 6, 7)
 
-相当于：
+#相当于：
 
 max(10, 5, 6, 7)
 ```
