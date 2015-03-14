@@ -282,7 +282,7 @@ execute now():
 
 剖析：首先执行`log('execute')`，返回的是`decorator`函数，再调用返回的函数，参数是`now`函数，返回值最终是`wrapper`函数。
 
-### `__name__`
+### __name__
 由于函数的`__name__`已经改变，依赖于此的代码就会出错。因此使用`functools.wraps`。
 
 ```python
