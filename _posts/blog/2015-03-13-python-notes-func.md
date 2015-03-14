@@ -5,7 +5,7 @@ category:    blog
 description: 学习来源：http://python.xiaoleilu.com/ http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000
 ---
 
-![cover](http://wanzao2.b0.upaiyun.com/system/avatars/427582/original/u.jpg)
+![cover](http://img5.duitang.com/uploads/item/201408/31/20140831102529_Ht4Cs.thumb.700_0.png)
 
 ## 定义
 
