@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: Wiki
 ---
 <div class="wiki">
