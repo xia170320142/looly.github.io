@@ -52,7 +52,8 @@ def power(x, n=2):
 
 ### 可变参数
 
-```pythondef calc(*numbers):
+```python
+def calc(*numbers):
     sum = 0
     for n in numbers:
         sum = sum + n * n
