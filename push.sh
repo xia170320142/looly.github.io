@@ -4,4 +4,4 @@
 git push origin master
 
 # Push to gitcafe
-git push gitcafe master
+git push gitcafe gitcafe-pages
