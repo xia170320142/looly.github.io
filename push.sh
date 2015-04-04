@@ -3,11 +3,11 @@
 # Push to github
 git push origin master
 
-# Push to gitcafe
+# Switch to branch gitcafe-pages
 git checkout gitcafe-pages
-# Merge master content
+# Merge from master
 git merge master
 # Push to remote gitcafe-pages branch
 git push gitcafe gitcafe-pages
-# Return
+# Return master
 git checkout master
