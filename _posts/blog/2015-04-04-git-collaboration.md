@@ -25,7 +25,7 @@ description: 这两天翻译Elasticsearch权威指南有很多小伙伴加入，
 1. `git clone <git地址>` 克隆到本地。
 2. `git fetch` 远端抓取。
 3. `git merge` 与本地当前分枝合并。
-4. `git pull [<远端别名>] [<远端branch>]` 抓取并合并相当于第5、6步
+4. `git pull [<远端别名>] [<远端branch>]` 抓取并合并,相当于第2、3步
 5. `git push [-f] [<远端别名>] [<远端branch>]` 推送到远端，`-f`为强制覆盖
 6. `git remote add <别名> <git地址>` 设置远端别名
 7. `git remote [-v]` 列出远端，`-v`为详细信息
