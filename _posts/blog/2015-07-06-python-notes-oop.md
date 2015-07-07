@@ -91,3 +91,142 @@ class Student(object):
     def __init__(self, name):
         self.name = name
 ```
+
+## 动态绑定方法
+```python
+#给对象绑定方法
+>>> def set_age(self, age): # 定义一个函数作为实例方法
+...     self.age = age
+...
+>>> from types import MethodType
+>>> s.set_age = MethodType(set_age, s) # 给实例绑定一个方法
+>>> s.set_age(25) # 调用实例方法
+>>> s.age # 测试结果
+25
+
+#给类绑定方法
+>>> def set_score(self, score):
+...     self.score = score
+...
+>>> Student.set_score = MethodType(set_score, Student)
+```
+
+## `__slots__`限制只能添加指定属性
+
+```python
+class Student(object):
+    __slots__ = ('name', 'age') # 用tuple定义允许绑定的属性名称
+
+>>> s = Student() # 创建新的实例
+>>> s.name = 'Michael' # 绑定属性'name'
+>>> s.age = 25 # 绑定属性'age'
+>>> s.score = 99 # 绑定属性'score'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Student' object has no attribute 'score'
+```
+
+## `@property`简化setter和getter
+```python
+class Student(object):
+
+    @property
+    def score(self):
+        return self._score
+
+    @score.setter
+    def score(self, value):
+        if not isinstance(value, int):
+            raise ValueError('score must be an integer!')
+        if value < 0 or value > 100:
+            raise ValueError('score must between 0 ~ 100!')
+        self._score = value
+
+#当调用属性赋值时，自动调用对应的setter方法
+>>> s = Student()
+>>> s.score = 60 # OK，实际转化为s.set_score(60)
+>>> s.score # OK，实际转化为s.get_score()
+60
+>>> s.score = 9999
+Traceback (most recent call last):
+  ...
+ValueError: score must between 0 ~ 100!
+```
+
+## 多重继承
+
+```python
+class Dog(Mammal, Runnable):
+    pass
+
+#需要“混入”额外的功能,使用叫做 MixIn 的设计
+class Dog(Mammal, RunnableMixIn, CarnivorousMixIn):
+    pass
+```
+
+## 定制类
+1. `__str__`：类似于Java中的toString()方法
+2. `__repr__()`：调试时使用的字符串
+3. `__iter__`：返回迭代对象，用于`for ... in`循环
+4. `__getitem__`：使用下标方式获取元素
+5. `__getattr__`：没有找到属性的情况下调用此方法
+6. `__call__`：把对象看成函数而直接调用所执行的方法
+
+## 枚举类
+```python
+from enum import Enum
+
+Month = Enum('Month', ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))
+
+#遍历
+for name, member in Month.__members__.items():
+    print(name, '=>', member, ',', member.value)
+
+#派生
+from enum import Enum, unique
+
+@unique
+class Weekday(Enum):
+    Sun = 0 # Sun的value被设定为0
+    Mon = 1
+    Tue = 2
+    Wed = 3
+    Thu = 4
+    Fri = 5
+    Sat = 6
+
+#@unique用于检查重复
+```
+
+## `type()`
+
+### 查看类型
+```python
+>>> from hello import Hello
+>>> h = Hello()
+>>> h.hello()
+Hello, world.
+>>> print(type(Hello))
+<class 'type'>
+>>> print(type(h))
+<class 'hello.Hello'>
+```
+
+### 创建类型
+
+```python
+#1.class名，2.父类集合，3.class的方法名称与函数绑定
+>>> def fn(self, name='world'): # 先定义函数
+...     print('Hello, %s.' % name)
+...
+>>> Hello = type('Hello', (object,), dict(hello=fn)) # 创建Hello class
+>>> h = Hello()
+>>> h.hello()
+Hello, world.
+>>> print(type(Hello))
+<class 'type'>
+>>> print(type(h))
+<class '__main__.Hello'>
+```
+
+### metaclass
