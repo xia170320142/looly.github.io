@@ -28,7 +28,12 @@ vim /usr/bin/yum
 ```
 
 将文件头部的
+```python
 #!/usr/bin/python
+```
 
 改成
+
+```python
 #!/usr/bin/python2.6
+```
