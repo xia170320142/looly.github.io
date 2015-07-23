@@ -1,6 +1,6 @@
 ---
 layout:      post
-title:       block、inline、inlinke-block对比
+title:       block、inline、inline-block对比
 category:    blog
 description: 其实之前对这三种display十分的不熟悉，都是“盲用”，今天总算有了个总结弄明白了。
 ---
