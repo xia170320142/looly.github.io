@@ -22,22 +22,23 @@ layout: default
         {{ content }}
 
         <div id="disqus_container">
-            <!--搜狐畅言-->
-            <div id="SOHUCS"></div>
-            <script>
-              (function(){
-                var appid = 'cyr9ESTUX',
-                conf = 'prod_bc0ac5fa34748484ef7fc4c4620700e4';
-                var doc = document,
-                s = doc.createElement('script'),
-                h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
-                s.type = 'text/javascript';
-                s.charset = 'utf-8';
-                s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
-                h.insertBefore(s,h.firstChild);
-                window.SCS_NO_IFRAME = true;
-              })()
-            </script>
+            <!-- 多说评论框 start -->
+            <div class="ds-thread" data-thread-key="{{ page.title }}" data-title="{{ page.title }}" data-url=""></div>
+            <!-- 多说评论框 end -->
+            <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+            <script type="text/javascript">
+            var duoshuoQuery = {short_name:"looly"};
+                (function() {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0] 
+                     || document.getElementsByTagName('body')[0]).appendChild(ds);
+                })();
+                </script>
+            <!-- 多说公共JS代码 end -->
+
         </div>
     </div>
 
