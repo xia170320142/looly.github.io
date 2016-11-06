@@ -6,8 +6,9 @@ description: 你想做喜欢的事情前，要做N件不喜欢的事情。
 ---
 
 
-
-<embed src='http://player.youku.com/player.php/sid/XMTc2NzEwODc3Ng==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+<center>
+	<embed src="http://player.yinyuetai.com/video/player/2705749/a_0.swf" quality="high" width="480" height="334" align="middle"  allowScriptAccess="sameDomain" allowfullscreen="true" type="application/x-shockwave-flash"></embed>
+</center>
 
 I remember
 
